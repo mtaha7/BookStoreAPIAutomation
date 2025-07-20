@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Bookstore suite" verbose="5" preserve-order="true">
+    <parameter name="applicationName" value="Book Store"/>
+    <test name="Authors">
+        <classes>
+            <class name="net.fakerestapi.AuthorsTests"/>
+        </classes>
+    </test>
+    <test name="Books">
+        <classes>
+            <class name="net.fakerestapi.BooksTests"/>
+        </classes>
+    </test>
+</suite>
