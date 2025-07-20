@@ -37,7 +37,7 @@ pipeline{
     post {
         always {
             bat 'docker logout'
-            archiveArtifacts artifacts: './test-output/ExtentReport/BSReport*.html', followSymlinks: false
+            archiveArtifacts artifacts: 'test-output/ExtentReport/BSReport*.html', followSymlinks: false
         }
     }
 
