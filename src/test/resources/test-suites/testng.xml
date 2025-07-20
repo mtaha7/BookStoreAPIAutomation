@@ -4,16 +4,12 @@
     <parameter name="applicationName" value="Book Store"/>
     <test name="Authors">
         <classes>
-            <class name="net.fakerestapi.AuthorsTests">
-                <methods>
-                    <include name="getAllAuthors"/>
-                </methods>
-            </class>
+            <class name="net.fakerestapi.AuthorsTests"/>
         </classes>
     </test>
-<!--    <test name="Books">-->
-<!--        <classes>-->
-<!--            <class name="net.fakerestapi.BooksTests"/>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test name="Books">
+        <classes>
+            <class name="net.fakerestapi.BooksTests"/>
+        </classes>
+    </test>
 </suite>
