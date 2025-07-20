@@ -28,6 +28,7 @@ pipeline{
 
         stage('run-test'){
             steps{
+               bat 'docker run -v ./test-output/ExtentReport:/home/api-docker/test-output/ExtentReport mtaha7/bookstore-api-image:lts'
                bat 'docker run mtaha7/bookstore-api-image:lts'
             }
         }
